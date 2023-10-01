@@ -79,7 +79,7 @@ main {
   margin: auto;
 
   width: 1440px;
-  height: 500px; /*   потом поменять */
+  /* height: 500px;  */
   margin: auto;
   display: flex;
   align-items: center;
@@ -92,7 +92,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 0;
 }
 .galery-item {
   width: 380px;
