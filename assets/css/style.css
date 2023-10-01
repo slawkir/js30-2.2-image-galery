@@ -44,7 +44,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-form {
+.form {
   width: 300px;
   position: relative;
 }
@@ -79,12 +79,30 @@ main {
   margin: auto;
 
   width: 1440px;
-  height: 500px;
+  height: 500px; /*   потом поменять */
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+}
+.galery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.galery-item {
+  width: 380px;
+  height: 214px;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  cursor: pointer;
 }
 footer {
   display: flex;
