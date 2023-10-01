@@ -90,14 +90,17 @@ main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0;
+  /* align-items:stretch;
+  justify-content: space-evenly; */
+  gap: 20px;
 }
 .galery-item {
-  width: 380px;
+  /* width: 380px; */
+  min-width: 300px;
+  width: calc((100% - 60px)/3);
   height: 214px;
-  margin-top: 15px;
+  /* margin-top: 15px;
+  margin-left: 15px; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,4 +120,78 @@ footer {
 }
 .logo-rss {
   width: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .galery-item {
+    min-width: 300px;
+    width: calc((100% - 60px)/2);
+    height: 214px;
+    /* margin-top: 15px; */
+    /* margin-left: 15px; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+}
+@media screen and (max-width: 680px) {
+  .galery {
+    justify-content: center;
+  }
+  .galery-item {
+    min-width: 300px;
+    width: calc((100% - 60px));
+    height: 214px;
+    /* margin-top: 15px; */
+    /* margin-left: 15px; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+}
+@media screen and (max-width: 547px) {
+  header .container {
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+ 
+}
+@media screen and (max-width: 361px) {
+  .container {
+    min-width: 200px;
+  }
+  header .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logo-title {
+    flex-direction: column;
+  }
+  .galery-item {
+    min-width: 200px;
+  }
+  .form {
+    width: 200px;
+  }
+  .logo-git {
+    width: 40px;
+  } 
+  footer .container > span {
+    font-size: 25px;
+  } 
+  .logo-rss {
+    width: 60px;
+  }
 }
